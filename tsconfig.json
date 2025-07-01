@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2019",                  // ✅ Updated from "es2016"
+    "lib": ["dom", "es2019"],            // ✅ Added to support flatMap and other ES2019+ features
+    "jsx": "react-jsx",
+
+    /* Modules */
+    "module": "commonjs",
+
+    /* JavaScript Support */
+    "allowJs": true,
+    "checkJs": false,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+
+    /* Module Resolution (Aliasing) */
+    "baseUrl": ".",                        // 👈 Required for path aliases
+    "paths": {
+      "@/*": ["src/*"]                     // 👈 Maps '@' to 'src' folder
+    },
+
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
