@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav } from './Nav';
-// import { Footer } from './Footer';
+import { Footer } from './Footer';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const currentYear = new Date().getFullYear();
@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div>
       <Nav />
       {children}
-      {/* <Footer year={currentYear} /> */}
+      <Footer year={currentYear} />
     </div>
   );
 };

@@ -11,25 +11,39 @@ export const Footer = ({ year }: { year: number }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-[#198754]">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-[#198754]">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/about" className="hover:text-[#198754] transition-all">
+                <Link
+                  to="/about"
+                  className="hover:text-[#198754] transition-all"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-[#198754] transition-all">
+                <Link
+                  to="/services"
+                  className="hover:text-[#198754] transition-all"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/location" className="hover:text-[#198754] transition-all">
+                <Link
+                  to="/location"
+                  className="hover:text-[#198754] transition-all"
+                >
                   Location
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[#198754] transition-all">
+                <Link
+                  to="/contact"
+                  className="hover:text-[#198754] transition-all"
+                >
                   Contact us
                 </Link>
               </li>
@@ -59,16 +73,28 @@ export const Footer = ({ year }: { year: number }) => {
           <div className="space-y-4 lg:ml-[3rem]">
             <h3 className="text-lg font-semibold text-[#198754]">Follow Us</h3>
             <div className="flex space-x-4">
-              <Link to="/" className="text-white hover:text-[#198754] transition-all">
+              <Link
+                to="/"
+                className="text-white hover:text-[#198754] transition-all"
+              >
                 <FaFacebook className="w-6 h-6" />
               </Link>
-              <Link to="/" className="text-white hover:text-[#198754] transition-all">
+              <Link
+                to="/"
+                className="text-white hover:text-[#198754] transition-all"
+              >
                 <FaTwitter className="w-6 h-6" />
               </Link>
-              <Link to="/" className="text-white hover:text-[#198754] transition-all">
+              <Link
+                to="/"
+                className="text-white hover:text-[#198754] transition-all"
+              >
                 <FaInstagram className="w-6 h-6" />
               </Link>
-              <Link to="/" className="text-white hover:text-[#198754] transition-all">
+              <Link
+                to="/"
+                className="text-white hover:text-[#198754] transition-all"
+              >
                 <FaLinkedin className="w-6 h-6" />
               </Link>
             </div>
@@ -83,7 +109,8 @@ export const Footer = ({ year }: { year: number }) => {
                 </div>
               </Link>
               <p className="text-sm font-medium">
-                Delivering secure, automated, and scalable EDI solutions to simplify how businesses communicate and grow.
+                Delivering secure, automated, and scalable EDI solutions to
+                simplify how businesses communicate and grow.
               </p>
             </div>
 

@@ -41,42 +41,56 @@ export const Nav = () => {
                 to="/"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
-                <p className={`${path === '/' ? 'text-maingreen' : ''}`}>Home</p>
+                <p className={`${path === '/' ? 'text-maingreen' : ''}`}>
+                  Home
+                </p>
               </Link>
 
               <Link
                 to="/about"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
-                <p className={`${path === '/about' ? 'text-maingreen' : ''}`}>About</p>
+                <p className={`${path === '/about' ? 'text-maingreen' : ''}`}>
+                  About
+                </p>
               </Link>
 
               <Link
                 to="/services"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
-                <p className={`${path === '/services' ? 'text-maingreen' : ''}`}>Solutions</p>
+                <p
+                  className={`${path === '/services' ? 'text-maingreen' : ''}`}
+                >
+                  Solutions
+                </p>
               </Link>
 
               <Link
                 to="/contact"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
-                <p className={`${path === '/contact' ? 'text-maingreen' : ''}`}>Partners</p>
+                <p className={`${path === '/contact' ? 'text-maingreen' : ''}`}>
+                  Partners
+                </p>
               </Link>
 
               <Link
                 to="/contact"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
-                <p className={`${path === '/contact' ? 'text-maingreen' : ''}`}>Careers</p>
+                <p className={`${path === '/contact' ? 'text-maingreen' : ''}`}>
+                  Careers
+                </p>
               </Link>
 
               <Link
                 to="/contact"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
-                <p className={`${path === '/contact' ? 'text-maingreen' : ''}`}>Contact</p>
+                <p className={`${path === '/contact' ? 'text-maingreen' : ''}`}>
+                  Contact
+                </p>
               </Link>
             </nav>
 

@@ -29,11 +29,22 @@ export const slideInFromRight: Variants = {
   },
 };
 export const slideInFromLeft: Variants = {
-  hidden: { opacity: 0, x: -100 },
+  hidden: {
+    opacity: 0,
+    x: -100, // Starts 100px to the left
+  },
   visible: {
     opacity: 1,
-    x: 0,
-    transition: { duration: 0.8, ease: 'easeOut' },
+    x: 0, // Moves to its natural position
+    transition: {
+      type: 'spring', // Optional: Try 'spring' for a bouncy effect
+      damping: 10, // Adjust if using 'spring'
+
+      stiffness: 100, // Adjust if using 'spring'
+      duration: 0.8, // Default duration
+      ease: [0.25, 0.1, 0.25, 1], // Smoother easing (optional)
+      delay: 0.2, // Optional delay (seconds)
+    },
   },
 };
 
@@ -53,4 +64,3 @@ export const variants = {
   slideInFromRight,
   scaleIn,
 };
-
