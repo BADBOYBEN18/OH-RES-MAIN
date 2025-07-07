@@ -68,7 +68,7 @@ const Carousel = () => {
       <div className="swiper-button-next !hidden lg:!flex !right-0 lg:!right-[-80px] !text-secondary"></div>
 
       {/* Custom CSS for Arrows */}
-      <style jsx global>{`
+      <style>{`
         .swiper-button-prev,
         .swiper-button-next {
           position: absolute;

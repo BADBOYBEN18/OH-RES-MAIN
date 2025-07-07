@@ -12,12 +12,13 @@ import { FaArrowRight } from 'react-icons/fa';
 import { fadeInUp } from '@/components/variants';
 import WhoAreWe from '@/components/WhoAreWe';
 import Carousel from '@/components/Carousel';
+import WhyChooseUs from '@/components/WhyChooseUs';
 
 const About = () => {
   return (
     <Layout>
       <div>
-        <main className="bg-secondary  flex justify-center  px-4 md:px-8 lg:mb-10 pt-20 xl:pt-15 ">
+        <main className="bg-secondary overflow-hidden flex justify-center  px-4 md:px-8 lg:mb-10 pt-20 xl:pt-15 ">
           <div className="flex flex-col md:flex-row items-center scale-98 max-w-7xl m-auto py-10 ">
             <motion.div
               initial="hidden"
@@ -90,6 +91,10 @@ const About = () => {
               <Carousel />
             </div>
           </div>
+        </section>
+
+        <section className=" px-4 md:px-8 mb-5 md:mb-10">
+          <WhyChooseUs />
         </section>
       </div>
     </Layout>
