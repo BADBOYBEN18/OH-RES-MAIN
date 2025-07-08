@@ -17,7 +17,6 @@ export default function SignInPage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-secondary">
-
       <main className="flex-grow flex items-center justify-center px-4 pt-24">
         <motion.div
           className="bg-white rounded-lg shadow-lg w-full max-w-md p-8 space-y-6"
@@ -67,7 +66,6 @@ export default function SignInPage() {
           </form>
         </motion.div>
       </main>
-
     </div>
   );
 }
