@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaLock, FaUser, FaArrowRight } from 'react-icons/fa';
 
-import { Nav } from '@/components/Nav';
 import AnimatedButton from '@/components/Button';
-import { Footer } from '@/components/Footer';
 import { fadeInUp, staggerContainer } from '@/components/variants';
 
 export default function SignInPage() {
@@ -19,7 +17,6 @@ export default function SignInPage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-secondary">
-      <Nav />
 
       <main className="flex-grow flex items-center justify-center px-4 pt-24">
         <motion.div
@@ -71,7 +68,6 @@ export default function SignInPage() {
         </motion.div>
       </main>
 
-      <Footer year={2025} />
     </div>
   );
 }
