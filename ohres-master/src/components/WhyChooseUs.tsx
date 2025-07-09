@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
 
   return (
     <section className="py-10 ">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto ">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -67,7 +67,6 @@ const WhyChooseUs = () => {
             Smarter EDI. Better Business.
           </motion.p>
         </motion.div>
-
         {/* Benefits Grid */}
         <motion.div
           variants={containerVariants}

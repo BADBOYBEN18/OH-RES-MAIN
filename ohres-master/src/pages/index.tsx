@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import { FaCog } from 'react-icons/fa';
 import SplitText from '@/components/ui/BlurText/GlareHover/SplitText/SplitText';
 import { Nav } from '@/components/Nav';
 // import { fadeIn } from '@/variants';
@@ -274,75 +274,79 @@ export default function Home() {
 
       {/* how it works */}
       <section className="px-4 md:px-8 py-10 md:py-16 lg:py-20 bg-[#f0f8f5]">
-        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10 max-w-7xl m-auto">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-7xl mx-auto px-4 md:px-6 py-10">
+          {/* Left Column - Content */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
             variants={slideInFromRight}
-            className="md:w-1/2"
+            className="md:w-1/2 w-full"
           >
-            <h1 className="text-[#198754] font-semibold text-lg md:text-xl mb-2">
-              HOW IT WORKS
-            </h1>
-            <h2 className="font-bold  text-xl md:text-3xl lg:text-3xl mb-4 md:mb-10">
-              A Simple, Streamlined EDI Process
-            </h2>
+            <div className="mb-6 md:mb-8">
+              <h1 className="text-[#198754] font-semibold text-lg md:text-xl mb-2">
+                HOW IT WORKS
+              </h1>
+              <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6">
+                A Simple, Streamlined EDI Process
+              </h2>
+            </div>
 
-            <div className="space-y-4 md:space-y-10">
-              <div className="flex gap-5">
-                <div className=" bg-[#198754] rounded-full w-10 h-10 lg:w-14 lg:h-14 lg:p-5 flex p-4 items-center justify-center mb-3 ">
+            <div className="space-y-6 md:space-y-8">
+              <div className="flex gap-4 md:gap-6 items-start">
+                <div className="bg-[#198754] rounded-full min-w-10 min-h-10 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shrink-0">
                   <FaFileAlt className="text-white text-lg md:text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-bold mb-2">
                     1. Document Preparation
                   </h3>
-                  <p className="text-base md:text-lg">
+                  <p className="text-base md:text-lg text-gray-700">
                     Business documents are converted to EDI-ready format for
                     seamless processing.
                   </p>
                 </div>
               </div>
-              <div className="flex gap-5">
-                <div className=" bg-[#198754] rounded-full w-10 h-10 lg:w-14 lg:h-14 lg:p-5 flex p-4 items-center justify-center mb-3 ">
+
+              <div className="flex gap-4 md:gap-6 items-start">
+                <div className="bg-[#198754] rounded-full min-w-10 min-h-10 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shrink-0">
                   <FaLock className="text-white text-lg md:text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-bold mb-2">
                     2. Secure Transmission
                   </h3>
-                  <p className="text-base md:text-lg">
+                  <p className="text-base md:text-lg text-gray-700">
                     Files are encrypted and securely sent through trusted
                     communication channels.
                   </p>
                 </div>
               </div>
 
-              <div className="flex gap-5">
-                <div className=" bg-[#198754] rounded-full w-10 h-10 lg:w-14 lg:h-14 lg:p-5 flex p-4 items-center justify-center mb-3 ">
-                  <FaSyncAlt className="text-white text-lg md:text-xl " />
+              <div className="flex gap-4 md:gap-6 items-start">
+                <div className="bg-[#198754] rounded-full min-w-10 min-h-10 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shrink-0">
+                  <FaSyncAlt className="text-white text-lg md:text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-bold mb-2">
                     3. Integration
                   </h3>
-                  <p className="text-base md:text-lg">
+                  <p className="text-base md:text-lg text-gray-700">
                     The data is automatically routed into your internal systems
                     (ERP, CRM, etc).
                   </p>
                 </div>
               </div>
 
-              <div className="flex gap-5">
-                <div className=" bg-[#198754] rounded-full w-10 h-10 lg:w-14 lg:h-14 lg:p-5 flex p-4 items-center justify-center mb-3 ">
+              <div className="flex gap-4 md:gap-6 items-start">
+                <div className="bg-[#198754] rounded-full min-w-10 min-h-10 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shrink-0">
                   <FaCheckCircle className="text-white text-lg md:text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-bold mb-2">
                     4. Confirmation
                   </h3>
-                  <p className="text-base md:text-lg">
+                  <p className="text-base md:text-lg text-gray-700">
                     Acknowledgments or response files are sent back
                     automatically.
                   </p>
@@ -351,8 +355,107 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <div className="md:w-1/2">
-            <img src="...." alt="img" />
+          {/* Right Column - Canadian Flag Animation */}
+          <div className="md:w-1/2 w-full flex justify-center mt-8 md:mt-0">
+            <motion.div
+              className="relative w-full max-w-md"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-100px' }}
+              variants={slideInFromRight}
+            >
+              <div className="relative flex justify-center items-center h-[300px] md:h-[400px]">
+                {/* Central Canadian Flag */}
+                <motion.div
+                  className="relative z-20 w-48 h-32 md:w-64 md:h-44 bg-white rounded-lg shadow-2xl overflow-hidden"
+                  animate={{
+                    y: [-5, 5, -5],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: 'easeInOut',
+                  }}
+                >
+                  <div className="w-full h-full flex">
+                    <div className="w-1/4 h-full bg-red-500"></div>
+                    <div className="w-1/2 h-full bg-white flex items-center justify-center">
+                      <div className="text-red-500 text-4xl md:text-6xl">
+                        🍁
+                      </div>
+                    </div>
+                    <div className="w-1/4 h-full bg-red-500"></div>
+                  </div>
+                </motion.div>
+
+                {/* Orbiting Cogs */}
+                <motion.div
+                  className="absolute w-16 h-16 bg-emerald-500/90 rounded-full flex items-center justify-center shadow-lg"
+                  animate={{ rotate: 360 }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: 'linear',
+                  }}
+                  style={{ transformOrigin: '110px 0px' }}
+                >
+                  <motion.div
+                    animate={{ rotate: -360 }}
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: 'linear',
+                    }}
+                  >
+                    <FaCog className="w-8 h-8 text-white" />
+                  </motion.div>
+                </motion.div>
+
+                <motion.div
+                  className="absolute w-12 h-12 bg-cyan-500/90 rounded-full flex items-center justify-center shadow-lg"
+                  animate={{ rotate: -360 }}
+                  transition={{
+                    duration: 10,
+                    repeat: Infinity,
+                    ease: 'linear',
+                  }}
+                  style={{ transformOrigin: '-100px 0px' }}
+                >
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{
+                      duration: 10,
+                      repeat: Infinity,
+                      ease: 'linear',
+                    }}
+                  >
+                    <FaCog className="w-6 h-6 text-white" />
+                  </motion.div>
+                </motion.div>
+
+                <motion.div
+                  className="absolute w-10 h-10 bg-red-500/80 rounded-full flex items-center justify-center shadow-lg"
+                  animate={{ rotate: 360 }}
+                  transition={{
+                    duration: 12,
+                    repeat: Infinity,
+                    ease: 'linear',
+                  }}
+                  style={{ transformOrigin: '0px 80px' }}
+                >
+                  <motion.div
+                    animate={{ rotate: -360 }}
+                    transition={{
+                      duration: 12,
+                      repeat: Infinity,
+                      ease: 'linear',
+                    }}
+                  >
+                    <FaCog className="w-5 h-5 text-white" />
+                  </motion.div>
+                </motion.div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
