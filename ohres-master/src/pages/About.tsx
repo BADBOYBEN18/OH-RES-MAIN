@@ -5,11 +5,12 @@ import {
   slideInFromRight,
   staggerContainer,
   scaleIn,
+  fadeInUp,
   slideInFromLeft,
 } from '@/variants/index';
 import AnimatedButton from '@/components/Button';
 import { FaArrowRight, FaRegPaperPlane } from 'react-icons/fa';
-import { fadeInUp } from '@/components/variants';
+// import { fadeInUp } from '@/components/variants';
 import WhoAreWe from '@/components/WhoAreWe';
 import Carousel from '@/components/Carousel';
 import WhyChooseUs from '@/components/WhyChooseUs';
@@ -55,10 +56,10 @@ const About = () => {
               initial="hidden"
               animate="visible"
               variants={slideInFromRight}
-              className="mt-8 md:mt-0 md:w-1/2 lg:w-2/4"
+              className="mt-8 md:mt-0 md:w-1/2 lg:w-[45%] shadow-lg shadow-maingreen rounded-2xl"
             >
               <img
-                className="rounded-2xl w-full h-auto max-h-[400px] object-cover"
+                className="rounded-2xl w-full h-auto max-h-[400px] object-cover overflow-clip"
                 src="https://ik.imagekit.io/h6pmd5ivo/OH-RES/assest.png?updatedAt=1752018464927"
                 alt="Digital solutions illustration"
               />
