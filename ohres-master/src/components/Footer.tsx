@@ -3,6 +3,7 @@
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
+import { SiteLockBadge } from './SiteLock';
 
 export const Footer = ({ year }: { year: number }) => {
   return (
@@ -113,6 +114,7 @@ export const Footer = ({ year }: { year: number }) => {
                 simplify how businesses communicate and grow.
               </p>
             </div>
+            {/* <SiteLockBadge /> */}
 
             <p className="text-sm font-medium mb-4">
               <span className="text-[#198754]">©</span> {year} OH-RES.

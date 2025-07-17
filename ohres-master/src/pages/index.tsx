@@ -26,10 +26,13 @@ import {
   slideInFromRight,
   scaleIn,
 } from '@/variants/index';
+import { SeoHead } from '@/components/SeoPage';
 
 export default function Home() {
   return (
     <div className="overflow-hidden">
+      <SeoHead title="Home" description="home page for OH-Res" />
+
       <Nav />
       <main className="bg-secondary  flex justify-center  px-4 md:px-8 lg:mb-10 pt-20 xl:pt-15 ">
         <div className="flex flex-col md:flex-row items-center scale-98 max-w-7xl m-auto py-10 ">

@@ -67,19 +67,21 @@ export const Nav = () => {
               </Link>
 
               <Link
-                to="/contact"
+                to="/partners"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
-                <p className={`${path === '/contact' ? 'text-maingreen' : ''}`}>
+                <p
+                  className={`${path === '/partners' ? 'text-maingreen' : ''}`}
+                >
                   Partners
                 </p>
               </Link>
 
               <Link
-                to="/contact"
+                to="/careers"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
-                <p className={`${path === '/contact' ? 'text-maingreen' : ''}`}>
+                <p className={`${path === '/careers' ? 'text-maingreen' : ''}`}>
                   Careers
                 </p>
               </Link>

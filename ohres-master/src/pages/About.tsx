@@ -14,11 +14,13 @@ import { FaArrowRight, FaRegPaperPlane } from 'react-icons/fa';
 import WhoAreWe from '@/components/WhoAreWe';
 import Carousel from '@/components/Carousel';
 import WhyChooseUs from '@/components/WhyChooseUs';
+import { SeoHead } from '@/components/SeoPage';
 
 const About = () => {
   return (
     <Layout>
       <div>
+        <SeoHead title="About us" description="About page for OH-Res" />
         <main className="bg-secondary overflow-hidden flex justify-center  px-4 md:px-8 lg:mb-10 pt-20 xl:pt-15 ">
           <div className="flex flex-col md:flex-row items-center justify-between md:gap-5 max-w-7xl mx-auto py-10 lg:my-[3rem]">
             <motion.div
@@ -45,7 +47,7 @@ const About = () => {
               >
                 OHRES blends creativity with strategy to empower businesses
                 through smart websites, seamless integration, and digital
-                excellence — tailored to meet your unique needs.
+                excellence tailored to meet your unique needs.
               </motion.p>
               <motion.div variants={slideInFromLeft}>
                 <AnimatedButton text={`Let′s Connect`} icon={FaArrowRight} />
