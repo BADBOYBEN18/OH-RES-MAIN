@@ -164,7 +164,7 @@ export default function ContactSection() {
           </h2>
           <p className=" mb-6">
             Complete this form and our team will respond within 24 business
-            hours.
+            hours of.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
