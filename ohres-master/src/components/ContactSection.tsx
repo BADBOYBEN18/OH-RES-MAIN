@@ -27,8 +27,8 @@ export default function ContactSection() {
         {/* Left Column - Contact Form */}
         <div className="flex flex-col">
           <div className="">
-            <h1 className="text-[2rem]  md:text-[3rem] font-bold text-[#4dbf88] tracking-wider mb-4 ">
-              OH-RES
+            <h1 className="text-[2rem]  lg:text-[3rem] font-bold text-[#4dbf88] tracking-wider mb-4 ">
+              OH-RES Ltd
             </h1>
             <div className="space-y-4 lg:space-y-6">
               <p>Send us an Email, call or fill the form to reach out to us!</p>
@@ -54,7 +54,7 @@ export default function ContactSection() {
                 </svg>
                 <div>
                   <h4 className="font-medium text-gray-900">Headquarters</h4>
-                  <p className="text-gray-600">Victoria Island, Lagos</p>
+                  <p className="text-gray-600">F.C.T, abuja</p>
                 </div>
               </div>
               <div className="flex items-start ">
@@ -81,7 +81,7 @@ export default function ContactSection() {
                 </svg>
                 <div>
                   <h4 className="font-medium text-gray-900">Our phone lines</h4>
-                  <p className="text-gray-600">+234 812 345 6789</p>
+                  <p className="text-gray-600">+234 906 576 3591</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -101,7 +101,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-medium text-gray-900">Business Hours</h4>
                   <p className="text-gray-600">
-                    Monday - Friday: 8:00 AM - 6:00 PM WAT
+                    Monday - Friday: 9:00 AM - 6:00 PM WAT
                   </p>
                 </div>
               </div>
@@ -164,7 +164,7 @@ export default function ContactSection() {
           </h2>
           <p className=" mb-6">
             Complete this form and our team will respond within 24 business
-            hours of.
+            hours.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">

@@ -57,15 +57,15 @@ export const Footer = ({ year }: { year: number }) => {
             <ul className="space-y-4">
               <li className="flex md:items-center lg:items-start gap-2">
                 <MdLocationOn className="text-[#198754] lg:text-[1.5rem]" />
-                <span>Victoria Island, Lagos</span>
+                <span>F.C.T, abuja</span>
               </li>
               <li className="flex md:items-center lg:items-start gap-2">
                 <MdPhone className="text-[#198754] lg:text-[1.5rem]" />
-                <span> +234 812 345 6789</span>
+                <span> +234 906 576 3591</span>
               </li>
               <li className="flex items-center gap-2">
                 <MdEmail className="text-[#198754]" />
-                <span>support@ohres.com</span>
+                <span>info@ohres.com</span>
               </li>
             </ul>
           </div>

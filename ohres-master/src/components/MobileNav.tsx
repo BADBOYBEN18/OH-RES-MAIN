@@ -55,10 +55,26 @@ const MobileNav = ({ handleOpen, isOpen }: MobileNavProps) => {
         <br />
         <br />
         <a
-          onClick={() => goTo('/services')}
-          className={`${currentPath === '/services' ? 'text-[#35a76c]' : ''}`}
+          onClick={() => goTo('/solutions')}
+          className={`${currentPath === '/solutions' ? 'text-[#35a76c]' : ''}`}
         >
-          <p>Services</p>
+          <p>Solutions</p>
+        </a>
+        <br />
+        <br />
+        <a
+          onClick={() => goTo('/login')}
+          className={`${currentPath === '/login' ? 'text-[#35a76c]' : ''}`}
+        >
+          <p>Login</p>
+        </a>
+        <br />
+        <br />
+        <a
+          onClick={() => goTo('/itsm')}
+          className={`${currentPath === '/itsm' ? 'text-[#35a76c]' : ''}`}
+        >
+          <p>ITSM</p>
         </a>
         <br />
         <br />

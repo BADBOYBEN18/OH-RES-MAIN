@@ -56,33 +56,31 @@ export const Nav = () => {
               </Link>
 
               <Link
-                to="/services"
+                to="/solutions"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
                 <p
-                  className={`${path === '/services' ? 'text-maingreen' : ''}`}
+                  className={`${path === '/solutions' ? 'text-maingreen' : ''}`}
                 >
                   Solutions
                 </p>
               </Link>
 
               <Link
-                to="/partners"
+                to="/login"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
-                <p
-                  className={`${path === '/partners' ? 'text-maingreen' : ''}`}
-                >
-                  Partners
+                <p className={`${path === '/login' ? 'text-maingreen' : ''}`}>
+                  Login
                 </p>
               </Link>
 
               <Link
-                to="/careers"
+                to="/itsm"
                 className="flex items-center gap-2 text-white text-[16px] hover:text-maingreen hover:-translate-y-2 transition-all duration-300"
               >
-                <p className={`${path === '/careers' ? 'text-maingreen' : ''}`}>
-                  Careers
+                <p className={`${path === '/itsm' ? 'text-maingreen' : ''}`}>
+                  ITSM
                 </p>
               </Link>
 

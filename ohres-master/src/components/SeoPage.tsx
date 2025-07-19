@@ -10,7 +10,7 @@ export const SeoHead = ({ title, description }: SeoHeadProps) => {
   return (
     <Helmet>
       <title>{title}</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/ed.jpg" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content={description} />
     </Helmet>
