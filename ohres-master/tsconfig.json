@@ -28,5 +28,5 @@
     /* Completeness */
     "skipLibCheck": true
   },
-  "include": ["src"]
+  "include": ["src", "../../frontend/src/components/Dashboard"]
 }
