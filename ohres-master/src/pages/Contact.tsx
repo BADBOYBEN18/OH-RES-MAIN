@@ -15,7 +15,7 @@ import { SeoHead } from '@/components/SeoPage';
 const Contact = () => {
   return (
     <Layout>
-      <SeoHead title="Contact Us" description="contact page for OH-Res" />
+      <SeoHead title="Contact Us" description="contact page for OH-Res ltd" />
       <div>
         <main className="bg-secondary overflow-hidden flex justify-center   px-4 md:px-8  pt-[7rem] xl:pt-[8rem] ">
           <div className="flex flex-col md:flex-row items-center justify-between md:gap-5 max-w-7xl mx-auto">

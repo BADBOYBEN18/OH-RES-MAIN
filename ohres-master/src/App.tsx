@@ -6,6 +6,8 @@ import ScrollToTop from './components/ScrollToTop';
 import Contact from './pages/Contact';
 import Itsm from './pages/Itsm';
 import Login from './pages/Login';
+import RegisterPage from './pages/Register';
+import { Solutions } from './pages/Solutions';
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
+        <Route path="/solutions" element={<Solutions />} />
+        <Route path="/register" element={<RegisterPage />} />
+
         <Route path="/contact" element={<Contact />} />
         <Route path="/itsm" element={<Itsm />} />
       </Routes>
